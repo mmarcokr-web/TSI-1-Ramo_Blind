@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pedido de Orçamento - Aluportas</title>
+        <link rel="stylesheet" href="../estilos.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="../index.html" class="PortasJanelas">Portas&Janelas</a>
+                <button class="menu-toggle">☰</button> 
+                
+                <ul class="nav-links">
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="programaValeEficiencia.html">Vale Eficiência</a></li>
+                    <li><a href="equipa.html">Equipa</a></li> <li><a href="orcamentos.html" class="btn-contacto active">Pedir Orçamento</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-wrapper">
+            <div class="form-container">
+                <h2>Pedido de Orçamento</h2>
+                <p>Preencha os dados abaixo para receber uma estimativa gratuita.</p>
+
+                <form action="#" method="post">
+                    <div class="section-title">Informações de Contacto</div>
+                    <div class="input-row">
+                        <input type="text" name="nome" placeholder="Nome Completo" required>
+                        <input type="email" name="email" placeholder="E-mail" required>
+                    </div>
+                    <div class="input-row">
+                        <input type="tel" name="telefone" placeholder="Telefone/Telemóvel" required>
+                        <input type="text" name="localidade" placeholder="Localidade da Obra" required>
+                    </div>
+
+                    <div class="section-title">Detalhes das Janelas</div>
+                    <div class="input-row">
+                        <select name="material" required>
+                            <option value="" disabled selected>Material Preferencial</option>
+                            <option value="pvc">PVC</option>
+                            <option value="aluminio">Alumínio</option>
+                        </select>
+                        <select name="tipo" required>
+                            <option value="" disabled selected>Tipo de Abertura</option>
+                            <option value="correr">Correr</option>
+                            <option value="oscilo-batente">Oscilo-batente</option>
+                        </select>
+                    </div>
+
+                    <div class="input-row dimensions">
+                        <input type="number" name="largura" placeholder="Largura (mm)">
+                        <input type="number" name="altura" placeholder="Altura (mm)">
+                        <input type="number" name="qtd" placeholder="Qtd">
+                    </div>
+
+                    <textarea name="mensagem" rows="4" placeholder="Observações (vidro, cor, estores...)"></textarea>
+
+                    <button type="submit" class="btn-submit">ENVIAR PEDIDO</button>
+                </form>
+            </div>
+
+            <aside class="contact-sidebar">
+                <div class="contact-box">
+                    <i class="fab fa-whatsapp"></i>
+                    <h3>Orçamento via WhatsApp</h3>
+                    <p>Resposta rápida pelo telemóvel</p>
+                    <a href="https://wa.me/351987878546" class="contact-link">+351 987 878 546</a>
+                </div>
+
+                <div class="contact-box">
+                    <i class="far fa-envelope"></i>
+                    <h3>Orçamento via Email</h3>
+                    <p>Envie os seus ficheiros ou plantas</p>
+                    <a href="mailto:portasdealuminio@gmail.com" class="contact-link">portasdealuminio@gmail.com</a>
+                </div>
+            </aside>
+        </main>
+
+        <footer class="footer">
+            <address>
+                <h3>Contactos</h3>
+                <p>Lisboa, Portugal</p>
+                <p>+351 987 878 546</p>
+                <p>portasdealumínio@gmail.com</p>
+            </address>
+            <aside id="direitos">
+                <p>© Portas de Alumínio. Todos os direitos reservados.</p>
+            </aside>
+        </footer>
+
+        <script src="../script.js"></script>
+    </body>
+
+</html>
