@@ -49,6 +49,25 @@ card img {
     height: 80%;
 }
 
+.laranja{
+    display: flex;
+
+    
+    margin-top: 20px;
+    margin-bottom: 50px;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.laranja a {
+
+    background-color: orange;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+
 
 .nav-links a {
     color: white;
